@@ -1,0 +1,149 @@
+@bgMain: #f1f1f1;
+body {
+  .active {
+    background: green !important;
+  }
+  background: @bgMain;
+  header {
+    user-select: none;
+    min-width: 700px;
+    position: relative;
+    height: 80px;
+    width: 100%;
+    background: #202020;
+    text-align: center;
+    .headline {
+      color: #898989;
+      font-size: 3em;
+      position: absolute;
+      top: 0;
+      bottom: 20%;
+      left: 0;
+      right: 0;
+      width: 50%;
+      height: 60%;
+      margin: auto;
+    }
+    .user {
+      min-width: 200px;
+      color: #898989;
+      font-size: 2em;
+      position: absolute;
+      top: 0;
+      bottom: 20%;
+      left: 0;
+      right: 90%;
+      height: 30%;
+      margin: auto;
+      .userName {
+        display: inline-block;
+      }
+      #userCash {
+        display: inline-block;
+      }
+    }
+    .inputLine {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 70%;
+      right: 0;
+      height: 45%;
+      margin: auto;
+      input {
+        width: 220px;
+        outline: none;
+        background: #393939;
+        border-radius: 20px;
+        border: 2px solid #898989;
+        color: #a9a9a9;
+        padding: 5px;
+        transition: all ease 0.5s;
+        &:focus {
+          transition: all ease 0.5s;
+          border: 2px solid #b0e1d5;
+        }
+      }
+    }
+  }
+  main {
+    min-width: 700px;
+    text-align: center;
+    margin-top: 200px;
+    #spinResult {
+      background: linear-gradient(20deg, #000000, #626465);
+      width: 300px;
+      height: 160px;
+      margin: auto;
+      font-size: 5em;
+      border-radius: 10px;
+      padding-top: 30px;
+      color: #898989;
+      user-select: none;
+    }
+    .userChoose {
+      margin-top: 30px;
+      button {
+        width: 60px;
+        height: 40px;
+        font-size: 1.2em;
+        border-radius: 20px;
+        background: #202020;
+        color: #898989;
+        border: 2px solid #898989;
+        transition: all ease 0.5s;
+        outline: none;
+      }
+      #btn1:hover {
+        border-color: yellow;
+        transition: all ease 0.5s;
+      }
+      #btn2:hover {
+        border-color: green;
+        transition: all ease 0.5s;
+      }
+      #btn3:hover {
+        border-color: deepskyblue;
+        transition: all ease 0.5s;
+      }
+      #btn4:hover {
+        border-color: purple;
+        transition: all ease 0.5s;
+      }
+      #btn5:hover {
+        border-color: maroon;
+        transition: all ease 0.5s;
+      }
+    }
+    .bettingPanel {
+      #bettingInput {
+        text-align: center;
+        font-size: 1.5em;
+        width: 120px;
+        height: 40px;
+        outline: none;
+        background: #393939;
+        border-radius: 20px;
+        border: 2px solid #898989;
+        color: #a9a9a9;
+        padding: 5px;
+        transition: all ease 0.5s;
+        &:focus {
+          transition: all ease 0.5s;
+          border: 2px solid #b0e1d5;
+        }
+      }
+      #spin {
+        margin-top: 30px;
+        width: 90px;
+        height: 50px;
+        outline: none;
+        border-radius: 15px;
+        background: #202020;
+        color: #898989;
+        font-size: 1.5em;
+        user-select: none;
+      }
+    }
+  }
+}

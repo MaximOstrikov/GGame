@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GGame</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/style.less" rel="stylesheet/less" type="text/css">
+    <link rel="SHORTCUT ICON" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/less.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="headline">GGame</div>
+    <div class="user">
+        <div class="userName">User</div>
+        <div id="userCash"></div>
+    </div>
+    <div class="inputLine">
+        <input type="text">
+    </div>
+</header>
+<main>
+    <div id="spinResult"></div>
+    <div class="userChoose">
+        <button id="1">x1</button>
+        <button id="3">x3</button>
+        <button id="5">x5</button>
+        <button id="10">x10</button>
+        <button id="20">x20</button>
+    </div>
+    <div class="bettingPanel">
+        <input type="text" id="bettingInput" placeholder="Your bid" maxlength="5" required pattern="[0-9]">
+        <button id="spin">Spin</button>
+    </div>
+</main>
+<script src="js/proj.js" type="text/javascript"></script>
+</body>
+</html>
